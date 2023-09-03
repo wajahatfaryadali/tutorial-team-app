@@ -45,8 +45,8 @@ const Employees = ({ handleCardClick, options, employees, handleOptionChange, se
         <div className='w-full pt-2'>
 
             <div className='max-w-[1240px] m-auto py-4 px-4 md:px-4'>
-                <div className=' text-center '>
-                    <select className='w-[50%] py-2 rounded-lg mb-4 px-4 mx-auto' value={selectedTeam} onChange={handleOptionChange}>
+                <div className='text-center'>
+                    <select className=' w-full md:w-[50%] py-2 rounded-lg mb-2 md:mb-4 px-4 mx-auto' value={selectedTeam} onChange={handleOptionChange}>
                         {options.map((val, i) =>
                             <option value={val.value} key={i}>
                                 {val.value}
